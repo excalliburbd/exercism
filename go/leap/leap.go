@@ -2,6 +2,6 @@ package leap
 
 const testVersion = 3
 
-func IsLeapYear(int) bool {
-	// Write some code here to pass the test suite.
+func IsLeapYear(year int) bool {
+	return (year%4 == 0) && (year%100 != 0 || year%400 == 0)
 }
